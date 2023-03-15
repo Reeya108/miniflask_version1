@@ -26,9 +26,10 @@ def hello_world():
 @app.route("/greeting")
 def custom_message():
 
-    # import requests
-    #
-    # response = requests.get("https://swapi.dev/api/films/1")
-    # # store response in DB
+    import requests
+
+    response = requests.get("https://swapi.dev/api/films/1")
+    # store response in DB
+
     return "<h1>data has been saved in DB</h1"
 
